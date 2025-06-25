@@ -1,0 +1,308 @@
+    /* Header Styles */
+    .header {
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .container-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    
+    /* Logo */
+    .logo img {
+        height: 50px;
+        margin-left: 25px;
+    }
+
+/* Hero Section */
+    .hero {
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 280px 0;
+        text-align: center;
+        position: relative;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    
+    .hero .hero-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .hero p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 30px;
+    }
+    
+    .hero button {
+        padding: 10px 20px;
+        background: #c4a950;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        position: absolute;
+        bottom: 50px;
+        left: 310px;
+    }
+    
+    .hero button:hover {
+        background: #8a8570;
+    }
+    
+    .hero ion-icon {
+        margin-left: 8px;
+    }
+
+    .kopi-kenangan {
+        padding: 60px 0;
+        background-color: #fff;
+    }
+    
+    .kopi-kenangan .image-col {
+        flex: 1 1 300px;
+    }
+    
+    .kopi-kenangan .text-col {
+        flex: 1 1 300px;
+    }
+    
+    .kopi-kenangan img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .awal-sederhana {
+        padding: 60px 0;
+        background-color: #fff;
+    }
+    
+    .awal-sederhana img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .awal-sederhana h2 {
+        color: #333;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+
+/* Footer */
+    .footer {
+        background: #222;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* Brand & Social Media */
+    .footer-brand {
+        text-align: center;
+    }
+    
+    .footer-brand img {
+        width: 140px;
+        height: auto;
+        margin-top: 30px;
+        margin-right: 300px;
+    }
+    
+    /* Footer Sections */
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        margin-right: 350px;
+    }
+    
+    .footer-section p, 
+    .footer-section a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .footer-section a:hover {
+        color: #007BFF;
+    }
+    
+    /* Map */
+    .footer-map {
+        width: 80%;
+        height: 150px;
+        border-radius: 5px;
+    }
+    
+    /* Footer Bottom */
+    .footer-bottom {
+        margin-right: 780px;
+    }
+    
+    .footer-bottom a {
+        color: #729953;
+        text-decoration: none;
+    }
+    
+    .footer-bottom a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .wa-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    }
+
+    .wa-float:hover {
+    transform: scale(1.1);
+    }
+
+    /* RESPONSIVE - Umum */
+@media (max-width: 992px) {
+    .container-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-left: 0;
+        height: 45px;
+    }
+
+    .hero h1,
+    .hero .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 120px 20px;
+    }
+
+    .kopi-kenangan .image-col,
+    .kopi-kenangan .text-col {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .kopi-kenangan .text-col {
+        padding: 0 15px;
+    }
+
+    .awal-sederhana h2 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .footer-brand img,
+    .footer-section h3 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1,
+    .hero .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .footer-brand img {
+        margin-right: 0;
+        width: 100px;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+.gallery-produk img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-produk img:hover {
+    transform: scale(1.05);
+}
+
+.footer-section ul {
+    padding-left: 0;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
